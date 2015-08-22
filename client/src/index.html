@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tennis">
+<head>
+    <title>Tennis</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <!-- build:css assets/css/main.css -->
+    <link rel="stylesheet" type="text/css" href="../build/assets/css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div ui-view></div>
+
+    <!-- build:js app/app.js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/lodash/lodash.min.js"></script>
+    <script src="../bower_components/moment/min/moment.min.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="../bower_components/sio-client/socket.io.js"></script>
+
+    <script src="app/app.js"></script>
+
+    <!-- core -->
+    <script src="app/core/core.js"></script>
+    <script src="app/core/auth/auth.js"></script>
+    <script src="app/core/endpoints/endpoints.js"></script>
+    <script src="app/core/endpoints/rest/rest.js"></script>
+    <script src="app/core/endpoints/socket/socket.js"></script>
+    <script src="app/core/models/models.js"></script>
+
+
+    <!-- ui -->
+    <script src="app/ui/ui.js"></script>
+
+    <!-- app -->
+    <script src="app/ui/app/app.js"></script>
+    <script src="app/ui/app/home/home.js"></script>
+
+    <!-- authentication -->
+    <script src="app/ui/authentication/authentication.js"></script>
+    <script src="app/ui/authentication/login/login.js"></script>
+    <script src="app/ui/authentication/logout/logout.js"></script>
+    <script src="app/ui/authentication/signup/signup.js"></script>
+    
+    <!-- common -->
+    <script src="app/ui/common/common.js"></script>
+    <script src="app/ui/common/directives/directives.js"></script>
+    <script src="app/ui/common/services/services.js"></script>
+
+    <script src="app/ui/app/home/home.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
